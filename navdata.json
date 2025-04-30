@@ -14,40 +14,18 @@
           "url": "https://www.bing.com",
           "icon": "https://www.bing.com/favicon.ico",
           "description": "微软搜索引擎"
-        }
-      ]
-    },
-    {
-      "name": "搜索引擎",
-      "sites": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com",
-          "icon": "https://www.google.com/favicon.ico",
-          "description": "全球最大的搜索引擎"
         },
         {
-          "name": "Bing",
-          "url": "https://www.bing.com",
-          "icon": "https://www.bing.com/favicon.ico",
-          "description": "微软搜索引擎"
-        }
-      ]
-    },
-    {
-      "name": "搜索引擎",
-      "sites": [
-        {
-          "name": "Google",
-          "url": "https://www.google.com",
-          "icon": "https://www.google.com/favicon.ico",
-          "description": "全球最大的搜索引擎"
+          "name": "DuckDuckGo",
+          "url": "https://duckduckgo.com",
+          "icon": "https://duckduckgo.com/favicon.ico",
+          "description": "注重隐私的搜索引擎"
         },
         {
-          "name": "Bing",
-          "url": "https://www.bing.com",
-          "icon": "https://www.bing.com/favicon.ico",
-          "description": "微软搜索引擎"
+          "name": "百度",
+          "url": "https://www.baidu.com",
+          "icon": "https://www.baidu.com/favicon.ico",
+          "description": "中国主流搜索引擎"
         }
       ]
     },
@@ -65,6 +43,18 @@
           "url": "https://twitter.com",
           "icon": "https://twitter.com/favicon.ico",
           "description": "社交媒体平台"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://facebook.com",
+          "icon": "https://facebook.com/favicon.ico",
+          "description": "全球最大社交平台"
+        },
+        {
+          "name": "知乎",
+          "url": "https://www.zhihu.com",
+          "icon": "https://static.zhihu.com/heifetz/favicon.ico",
+          "description": "中文问答社区"
         }
       ]
     },
@@ -82,6 +72,221 @@
           "url": "https://stackoverflow.com",
           "icon": "https://stackoverflow.com/favicon.ico",
           "description": "程序员问答社区"
+        },
+        {
+          "name": "Gitee",
+          "url": "https://gitee.com",
+          "icon": "https://gitee.com/favicon.ico",
+          "description": "中国代码托管平台"
+        },
+        {
+          "name": "CodePen",
+          "url": "https://codepen.io",
+          "icon": "https://codepen.io/favicon.ico",
+          "description": "前端代码演示平台"
+        }
+      ]
+    },
+    {
+      "name": "常用工具",
+      "sites": [
+        {
+          "name": "阿里云盘",
+          "url": "https://www.aliyundrive.com",
+          "icon": "https://www.aliyundrive.com/favicon.ico",
+          "description": "阿里云网盘"
+        },
+        {
+          "name": "腾讯文档",
+          "url": "https://docs.qq.com",
+          "icon": "https://docs.qq.com/favicon.ico",
+          "description": "在线文档协作"
+        },
+        {
+          "name": "ProcessOn",
+          "url": "https://www.processon.com",
+          "icon": "https://www.processon.com/favicon.ico",
+          "description": "在线作图工具"
+        },
+        {
+          "name": "SmallPDF",
+          "url": "https://smallpdf.com/cn",
+          "icon": "https://smallpdf.com/favicon.ico",
+          "description": "PDF在线处理"
+        }
+      ]
+    },
+    {
+      "name": "资讯阅读",
+      "sites": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com",
+          "icon": "https://36kr.com/favicon.ico",
+          "description": "科技商业资讯"
+        },
+        {
+          "name": "少数派",
+          "url": "https://sspai.com",
+          "icon": "https://cdn.sspai.com/sspai/assets/img/favicon.ico",
+          "description": "数字生活媒体"
+        },
+        {
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com",
+          "icon": "https://news.ycombinator.com/favicon.ico",
+          "description": "极客新闻"
+        },
+        {
+          "name": "FT中文网",
+          "url": "https://www.ftchinese.com",
+          "icon": "https://www.ftchinese.com/favicon.ico",
+          "description": "金融与商业新闻"
+        }
+      ]
+    },
+    {
+      "name": "设计灵感",
+      "sites": [
+        {
+          "name": "Dribbble",
+          "url": "https://dribbble.com",
+          "icon": "https://dribbble.com/favicon.ico",
+          "description": "设计师灵感社区"
+        },
+        {
+          "name": "Behance",
+          "url": "https://www.behance.net",
+          "icon": "https://www.behance.net/favicon.ico",
+          "description": "创意作品展示"
+        },
+        {
+          "name": "花瓣网",
+          "url": "https://huaban.com",
+          "icon": "https://huaban.com/favicon.ico",
+          "description": "国内设计灵感"
+        },
+        {
+          "name": "UI中国",
+          "url": "https://www.ui.cn",
+          "icon": "https://www.ui.cn/favicon.ico",
+          "description": "UI设计师社区"
+        }
+      ]
+    },
+    {
+      "name": "人工智能",
+      "sites": [
+        {
+          "name": "OpenAI ChatGPT",
+          "url": "https://chat.openai.com",
+          "icon": "https://chat.openai.com/favicon.ico",
+          "description": "AI对话助手"
+        },
+        {
+          "name": "百度文心一言",
+          "url": "https://yiyan.baidu.com",
+          "icon": "https://yiyan.baidu.com/favicon.ico",
+          "description": "百度AI大模型"
+        },
+        {
+          "name": "Midjourney",
+          "url": "https://www.midjourney.com",
+          "icon": "https://www.midjourney.com/favicon.ico",
+          "description": "AI绘画"
+        },
+        {
+          "name": "Stable Diffusion",
+          "url": "https://stablediffusionweb.com",
+          "icon": "https://stablediffusionweb.com/favicon.ico",
+          "description": "AI图片生成"
+        }
+      ]
+    },
+    {
+      "name": "学习平台",
+      "sites": [
+        {
+          "name": "Coursera",
+          "url": "https://www.coursera.org",
+          "icon": "https://www.coursera.org/favicon.ico",
+          "description": "全球知名在线课程"
+        },
+        {
+          "name": "慕课网",
+          "url": "https://www.imooc.com",
+          "icon": "https://www.imooc.com/favicon.ico",
+          "description": "IT在线学习"
+        },
+        {
+          "name": "Bilibili",
+          "url": "https://www.bilibili.com",
+          "icon": "https://www.bilibili.com/favicon.ico",
+          "description": "学习与娱乐视频"
+        },
+        {
+          "name": "TED",
+          "url": "https://www.ted.com",
+          "icon": "https://www.ted.com/favicon.ico",
+          "description": "全球演讲平台"
+        }
+      ]
+    },
+    {
+      "name": "云服务",
+      "sites": [
+        {
+          "name": "阿里云",
+          "url": "https://www.aliyun.com",
+          "icon": "https://www.aliyun.com/favicon.ico",
+          "description": "中国云计算服务"
+        },
+        {
+          "name": "腾讯云",
+          "url": "https://cloud.tencent.com",
+          "icon": "https://cloud.tencent.com/favicon.ico",
+          "description": "腾讯云服务"
+        },
+        {
+          "name": "AWS",
+          "url": "https://aws.amazon.com",
+          "icon": "https://aws.amazon.com/favicon.ico",
+          "description": "亚马逊云服务"
+        },
+        {
+          "name": "Azure",
+          "url": "https://azure.microsoft.com",
+          "icon": "https://azure.microsoft.com/favicon.ico",
+          "description": "微软云服务"
+        }
+      ]
+    },
+    {
+      "name": "视频娱乐",
+      "sites": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com",
+          "icon": "https://www.youtube.com/favicon.ico",
+          "description": "全球最大视频平台"
+        },
+        {
+          "name": "Netflix",
+          "url": "https://www.netflix.com",
+          "icon": "https://www.netflix.com/favicon.ico",
+          "description": "流媒体影视平台"
+        },
+        {
+          "name": "爱奇艺",
+          "url": "https://www.iqiyi.com",
+          "icon": "https://www.iqiyi.com/favicon.ico",
+          "description": "中国主流视频平台"
+        },
+        {
+          "name": "腾讯视频",
+          "url": "https://v.qq.com",
+          "icon": "https://v.qq.com/favicon.ico",
+          "description": "腾讯视频平台"
         }
       ]
     }
