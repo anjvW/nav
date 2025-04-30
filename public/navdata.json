@@ -1,0 +1,89 @@
+{
+  "categories": [
+    {
+      "name": "搜索引擎",
+      "sites": [
+        {
+          "name": "Google",
+          "url": "https://www.google.com",
+          "icon": "https://www.google.com/favicon.ico",
+          "description": "全球最大的搜索引擎"
+        },
+        {
+          "name": "Bing",
+          "url": "https://www.bing.com",
+          "icon": "https://www.bing.com/favicon.ico",
+          "description": "微软搜索引擎"
+        }
+      ]
+    },
+    {
+      "name": "搜索引擎",
+      "sites": [
+        {
+          "name": "Google",
+          "url": "https://www.google.com",
+          "icon": "https://www.google.com/favicon.ico",
+          "description": "全球最大的搜索引擎"
+        },
+        {
+          "name": "Bing",
+          "url": "https://www.bing.com",
+          "icon": "https://www.bing.com/favicon.ico",
+          "description": "微软搜索引擎"
+        }
+      ]
+    },
+    {
+      "name": "搜索引擎",
+      "sites": [
+        {
+          "name": "Google",
+          "url": "https://www.google.com",
+          "icon": "https://www.google.com/favicon.ico",
+          "description": "全球最大的搜索引擎"
+        },
+        {
+          "name": "Bing",
+          "url": "https://www.bing.com",
+          "icon": "https://www.bing.com/favicon.ico",
+          "description": "微软搜索引擎"
+        }
+      ]
+    },
+    {
+      "name": "社交媒体",
+      "sites": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com",
+          "icon": "https://github.com/favicon.ico",
+          "description": "代码托管平台"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com",
+          "icon": "https://twitter.com/favicon.ico",
+          "description": "社交媒体平台"
+        }
+      ]
+    },
+    {
+      "name": "开发工具",
+      "sites": [
+        {
+          "name": "VSCode",
+          "url": "https://code.visualstudio.com",
+          "icon": "https://code.visualstudio.com/favicon.ico",
+          "description": "代码编辑器"
+        },
+        {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com",
+          "icon": "https://stackoverflow.com/favicon.ico",
+          "description": "程序员问答社区"
+        }
+      ]
+    }
+  ]
+} 
