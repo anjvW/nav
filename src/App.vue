@@ -1,14 +1,14 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
-import { Search } from '@element-plus/icons-vue'
+import { Search, FolderOpened, Link } from '@element-plus/icons-vue'
 
 const categories = ref([])
 const searchQuery = ref('')
 
 const loadNavData = async () => {
   try {
-    const response = await axios.get('/navdata.json')
+    const response = await axios.get('/nav/navdata.json')
     categories.value = response.data.categories
   } catch (error) {
     console.error('加载导航数据失败:', error)
@@ -29,6 +29,12 @@ const filteredCategories = computed(() => {
 
 const openSite = (url) => {
   window.open(url, '_blank')
+}
+
+const openAllSites = (sites) => {
+  sites.forEach(site => {
+    window.open(site.url, '_blank')
+  })
 }
 
 onMounted(() => {
@@ -66,8 +72,18 @@ onMounted(() => {
           >
             <template #header>
               <div class="category-header">
+                <el-icon class="category-icon"><FolderOpened /></el-icon>
                 <h2>{{ category.name }}</h2>
                 <span class="site-count">{{ category.sites.length }}个网站</span>
+                <el-button 
+                  class="open-all-btn" 
+                  type="primary" 
+                  size="small" 
+                  :icon="Link" 
+                  @click.stop="openAllSites(category.sites)"
+                  plain
+                  circle
+                />
               </div>
             </template>
             <div class="sites-container">
@@ -180,24 +196,36 @@ html, body, #app {
 
 .category-card {
   width: 100%;
-  background: rgba(20, 30, 50, 0.85);
-  border-radius: 16px;
+  background: rgba(20, 30, 50, 0.88);
+  border-radius: 18px;
   border: 1.5px solid #00eaff55;
-  box-shadow: 0 0 24px #00eaff22, 0 2px 16px #000a;
+  box-shadow: 0 0 32px #00eaff22, 0 2px 16px #000a;
   transition: all 0.3s cubic-bezier(.4,2,.6,1);
   box-sizing: border-box;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  overflow: hidden;
 }
 .category-card:hover {
-  box-shadow: 0 0 32px #00eaff99, 0 2px 24px #000c;
+  box-shadow: 0 0 40px #00eaffbb, 0 2px 24px #000c;
   border-color: #00eaff;
 }
 
 .category-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   padding: 0 15px;
+  position: relative;
+  background: transparent;
+  border-radius: 18px 18px 0 0;
+  min-height: 60px;
+}
+
+.category-icon {
+  font-size: 1.5em;
+  color: #00eaff;
+  filter: drop-shadow(0 0 6px #00eaff99);
 }
 
 .category-header h2 {
@@ -215,6 +243,21 @@ html, body, #app {
   text-shadow: 0 0 4px #00eaff55;
 }
 
+.open-all-btn {
+  margin-left: auto;
+  background: linear-gradient(90deg, #00eaff 0%, #00bfff 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 8px #00eaff55;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.open-all-btn:hover {
+  background: linear-gradient(90deg, #00bfff 0%, #00eaff 100%);
+  color: #fff;
+}
+
 .sites-container {
   width: 100%;
   display: grid;
@@ -222,9 +265,26 @@ html, body, #app {
   gap: 18px;
   padding: 18px;
   box-sizing: border-box;
+  max-height: 300px; /* 4个网站卡片高度+间距 */
+  overflow-y: auto;
+  background: transparent;
+  border-radius: 0 0 16px 16px;
+}
+.sites-container::-webkit-scrollbar {
+  width: 8px;
+}
+.sites-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00eaff99 0%, #00bfff99 100%);
+  border-radius: 8px;
+}
+.sites-container::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .site-card {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
   width: 100%;
   background: rgba(30, 40, 60, 0.92);
   border-radius: 10px;
@@ -295,7 +355,7 @@ html, body, #app {
 }
 
 .has-search-results {
-  background: rgba(255, 255, 255, 0.95);
+  border-color: #00eaff !important;
 }
 
 @media (max-width: 1024px) {
@@ -306,9 +366,14 @@ html, body, #app {
 }
 
 @media (max-width: 768px) {
+  .header {
+    position: static;
+    margin-bottom: 24px;
+    box-shadow: none;
+  }
   .header-content {
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
     padding: 15px;
   }
   .search-box {
@@ -317,6 +382,7 @@ html, body, #app {
   .category-container {
     grid-template-columns: 1fr;
     padding: 10px;
+    margin-top: 36px;
   }
   .sites-container {
     grid-template-columns: 1fr;
